@@ -1,26 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Libre+Baskerville&family=Roboto+Slab:wght@400;500;700;900&display=swap');
+
+
 .header {
-    background-color: #ffffff;
-    border: #BBBBBB;
-    border-style: dashed;
-    border-width: 8px; 
     text-align: center;
-    font-family: "Lucida Console", Courier, monospace;
+    font-family: "IBM Plex Mono", Courier, monospace;
     font-size: 150%;
 }
 
 .main-body {
     background-color: #ffffff;
-    border-right: #BBBBBB;
-    border-left: #BBBBBB;
-    border-bottom: #BBBBBB;
-    border-top: none;
-    border-style: dashed;
-    border-width: 8px;
     width: 75%;
     height: 100%;
     margin: auto;
     text-align: center;
-    font-family: "Lucida Console", Courier, monospace;
+    font-family: "IBM Plex Mono", Courier, monospace;
     font-size: 100%;
 }
 
@@ -32,11 +25,11 @@ body {
     background-color: #ff0000;
     border: #000000;
     border-style: dashed;
-    border-width: 10px;
+    border-width: 5px;
     width: 75%;
     height: 100%;
     margin: auto;
     text-align: center;
-    font-family: "Lucida Console", Courier, monospace;
+    font-family: "IBM Plex Mono", Courier, monospace;
     font-size: 100%;
 }
