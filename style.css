@@ -1,9 +1,8 @@
 .header {
     background-color: #ffffff;
-    border: #f1f1f1;
+    border: #BBBBBB;
     border-style: dashed;
-    border-width: 12px;
-    padding: 10px;   
+    border-width: 8px; 
     text-align: center;
     font-family: "Lucida Console", Courier, monospace;
     font-size: 150%;
@@ -11,9 +10,12 @@
 
 .main-body {
     background-color: #ffffff;
-    border: #f1f1f1;
+    border-right: #BBBBBB;
+    border-left: #BBBBBB;
+    border-bottom: #BBBBBB;
+    border-top: none;
     border-style: dashed;
-    border-width: 12px;
+    border-width: 8px;
     width: 75%;
     height: 100%;
     margin: auto;
@@ -24,4 +26,17 @@
 
 body {
     background-color: #f1f1f1;
+}
+
+.warning {
+    background-color: #ff0000;
+    border: #000000;
+    border-style: dashed;
+    border-width: 10px;
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 100%;
 }
