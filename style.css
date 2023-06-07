@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Libre+Baskerville&family=Roboto+Slab:wght@400;500;700;900&display=swap');
 
+html {
+    height: 100%;
+}
 
 body {
     background-color: #bddba1;
+margin: 0;
 }
 
 .warning {
@@ -18,22 +22,25 @@ body {
     font-size: 100%;
 }
 
-.header {
-    text-align: center;
-    font-family: "IBM Plex Mono", Courier, monospace;
-    font-size: 150%;
-    border: 1px solid black;
-    padding: 2px;
-    padding-block: 2px;
-}
-
 .main-body {
     background-color: #93c267;
     width: 75%;
-    height: 100%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     font-family: "IBM Plex Mono", Courier, monospace;
     font-size: 100%;
     color: #fcc203;
+}
+
+.header {
+    font-size: 150%;
+}
+
+h1 {
+    margin: 0;
+    padding: 0.5em;
+}
+
+.col1 {
+    width: 50%;
 }
