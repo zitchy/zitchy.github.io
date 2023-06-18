@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Blog</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="warning">
+      <h5>Warning</h5>
+      <p>This page is still under construction. Please come back later.</p>
+    </div>
+    <div class="main-body">
+      <div class="header"><h1>Mango's Blog</h1></div>
+      <table align="center">
+        <tr class="mainrow">
+          <div class="col1">
+            <td class=" col1">
+            <h2>Latest Posts</h2>
+            <ul>
+              <li><a href="#">Whoami?</a></li>
+              <li><a href="#">Megalophobia</a></li>
+              <li><a href="#">Birthday Outing</a></li>
+            </ul>
+            </td>
+            </div>
+            <div class="col2">
+            <td class="col2">
+                <td>
+              <h2>Latest Posts</h2>
+              <ul>
+                <li><a href="#">Whoami?</a></li>
+                <li><a href="#">Megalophobia</a></li>
+                <li><a href="#">Birthday Outing</a></li>
+              </ul>
+            </td>
+            <td class="col2">
+              <h2>About Me</h2>
+              <p>Hi, I'm Umang and I love to write about whatever pop's up in my head.</p>
+            </td>
+              </tr>
+            </td>
+
+            </table>
+          </tr>
+        </tr>
+    </table>
+    </div>
+  </body>
+</html>
