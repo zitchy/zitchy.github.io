@@ -1,10 +1,20 @@
 let hands = ["rock", "paper", "scissor"]
 
+let username = ""
 // Create a function that returns a random item from the array
-
+function setName(){
+    let nameEl = document.querySelector("#name-el")
+    username = nameEl.value
+    setTimeout(function() {
+        let nameText = document.querySelector("#name-text")
+        nameText.textContent = "Change name?"
+        let buttonText = document.querySelector("#name-set")
+        buttonText.textContent = "Change"
+        nameEl.value = ""
+    }, 300);
+}
 function rockPaperScissors() {
-    let username = prompt("Please enter your name")
-    while(true){
+    while(username){
         let user = {
             name: username,
             selection: prompt("Please enter your choice: rock, paper, or scissor? (x to stop).")

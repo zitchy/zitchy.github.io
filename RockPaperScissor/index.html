@@ -2,13 +2,23 @@
 <html>
     <head>
         <script src="rps.js"></script>
-        <style rel="stylesheet" href="style.css"></style>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
         <title>Rock Paper Scissor!</title>
     </head>
     <body>
+        <div id="header">
+            <h1>Rock Paper Scissor!</h1>
+        </div>
         <div id="main">
-            <p>Let's play a game!</p>
-            <button id="play" onclick="rockPaperScissors()">PLAY</button>
+            <div id="name">
+                <p id="name-text">Please enter your name:</p>
+                <input placeholder="Name" id="name-el"></input>
+                <button class="btn" id="name-set" onclick="setName()">Set Name</button>
+            </div>
+        <button id="play" onclick="rockPaperScissors()">PLAY</button>
         </div>
     </body>
 </html>
