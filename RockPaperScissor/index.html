@@ -13,10 +13,17 @@
             <h1>Rock Paper Scissor!</h1>
         </div>
         <div id="main">
-            <div id="name">
-                <p id="name-text">Please enter your name:</p>
-                <input placeholder="Name" id="name-el"></input>
-                <button class="btn" id="name-set" onclick="setName()">Set Name</button>
+            <div id="user-stats">
+                <div id="scores-el">
+                    <p id="win-el">Wins: 0</p>
+                    <p id="loss-el">Losses: 0</p>
+                    <p id="tie-el">Ties: 0</p>
+                 </div>
+                 <div id="name-el">
+                    <p id="name-text">Please enter your name:</p>
+                    <input placeholder="Name" id="name-el"></input>
+                    <button class="btn" id="name-set" onclick="setName()">Set Name</button>
+                </div>
             </div>
         <button id="play" onclick="rockPaperScissors()">PLAY</button>
         </div>

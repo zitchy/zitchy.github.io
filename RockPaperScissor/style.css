@@ -19,16 +19,6 @@ body {
     color: #121212;
 }
 
-#name {
-    display: flex;
-    justify-content: center;
-}
-
-#name > * {
-    margin: 10px;
-    padding:10px 20px;
-}
-
 
 #header > h1{
     margin: 0;
@@ -36,4 +26,24 @@ body {
 
 input {
     border:3px solid #121212;
+}
+
+
+#user-stats, #user-stats > * {
+    display: flex;
+}
+
+#scores-el {
+    margin: 15px auto 15px 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+#scores-el > * {
+    padding: 0px 10px;
+    margin: 5px;
+}
+
+#name-el {
+    margin: 15px 20px 15px auto;
 }
