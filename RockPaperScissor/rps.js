@@ -3,49 +3,51 @@
 Selected win, loss, tie elements from html. Tried query selecting outside of function but it gave null object. Called inside rps function and they initialised fine.
 
 Counts update inside the winDecider function but not reflected back in the main function. Values remain 0 (except tie since it is changed inside main function itself). 
-
 */
 
-let hands = ["rock", "paper", "scissor"]
-let username = ""
-// let winEl = document.querySelector("#name-input")
-// console.log(winEl)
-// let winCount = 0
-// let lossEl = document.querySelector("#loss-el")
-// console.log(lossEl)
-// let lossCount = 0
-// let tieEl = document.querySelector("#tie-el")
-// console.log(tieEl)
-// let tieCount = 0
+// function setName(){
+    
+//     let nameEl = document.querySelector("#name-input")
+//     username = nameEl.value
+//     setTimeout(function() {
+//         let nameText = document.querySelector("#name-text")
+//         nameText.textContent = "Change name?"
+//         let buttonText = document.querySelector("#name-set")
+//         buttonText.textContent = "Change"
+//         nameEl.value = ""
+//     }, 300);
+// }
+
+const hands = ["rock", "paper", "scissor"]
 
 
-function setName(){
-    let nameEl = document.querySelector("#name-input")
-    username = nameEl.value
-    setTimeout(function() {
-        let nameText = document.querySelector("#name-text")
-        nameText.textContent = "Change name?"
-        let buttonText = document.querySelector("#name-set")
-        buttonText.textContent = "Change"
-        nameEl.value = ""
-    }, 300);
-}
+let winCount = 0
+let lossCount = 0
+let tieCount = 0
+
 function rockPaperScissors() {
-    let winEl = document.querySelector("#win-el")
+    console.log("Play button pressed!")
+    //Initialising Counters and username variables.
+    let winEl = document.getElementById("win-el")
     console.log(winEl)
-    let winCount = 0
     let lossEl = document.querySelector("#loss-el")
     console.log(lossEl)
-    let lossCount = 0
     let tieEl = document.querySelector("#tie-el")
     console.log(tieEl)
-    let tieCount = 0
-    console.log("Play button pressed!")
-    console.log(username)
-    while(username){
+    
+    let leftHand = document.getElementById("left-hand")
+    let rightHand = document.getElementById("right-hand")
+    
+    
+    
+    while(true){
         let user = {
-            name: username,
+            name: "Player",
             selection: prompt("Please enter your choice: rock, paper, or scissor? (x to stop).")
+        }
+        let computer = {
+            name: "Computer",
+            selection: hands[Math.floor(Math.random() * 3)]
         }
         if (user.selection == "x"){
             break
@@ -56,68 +58,50 @@ function rockPaperScissors() {
         }
         else {
             console.log("Your choice: " + user.selection)
-            let computer = {
-                name: "Computer",
-                selection: hands[Math.floor(Math.random() * 3)]
+            console.log("Computer's choice: " + computer.selection)              
+            console.log(winDecider(user, computer))
+            console.log("----------------------------------")      
+            console.log(winCount + "||" + lossCount)        
             }
-            console.log("Computer's choice: " + computer.selection)
-            if (user.selection == computer.selection){
-                tieCount += 1
-                tieEl.textContent = "Ties: " + tieCount
-                console.log("It's a tie.")
-                console.log("----------------------------------")                
-                continue
-            }
-            else{                
-                console.log(winDecider(user, computer) + " wins!")
-                console.log("----------------------------------")      
-                console.log(winCount + "||" + lossCount)        
-            }
+        winEl.textContent = "Wins: " + winCount
+        lossEl.textContent = "Losses: " + lossCount
+        tieEl.textContent = "Ties: " + tieCount
+
+        leftHand.textContent = user.selection
+        rightHand.textContent = computer.selection
+
         }
     }
-}
 
 function winDecider(A, B){
-    if (A.selection == "rock") {
-        if (B.selection == "paper") {
+    if (A.selection == B.selection){
+            tieCount += 1
+            console.log("It's a tie.")
+            console.log("----------------------------------")
+            return "It's a tie"
+    }
+    if (A.selection == "rock" && B.selection == "paper") {
             lossCount += 1
             console.log(lossCount)
-            return B.name
+            return B.name + "wins!"
         }
-        else {
-            winCount += 1
-            console.log(winCount)
-            return A.name
-        }
-    }
     
-    else if (A.selection == "paper") {
-        if (B.selection == "scissor") {
+    else if (A.selection == "paper" && B.selection == "scissor") {
             lossCount += 1
             console.log(lossCount)
-            return B.name
-        }
-        
-        else {
-            winCount += 1
-            console.log(winCount)
-            return A.name
-        }
+            return B.name + "wins!"
     }
     
-    else if (A.selection == "scissor") {
-        if (B.selection == "rock") {
+    else if (A.selection == "scissor" && B.selection == "rock") {
             lossCount += 1
             console.log(lossCount)
-            return B.name
+            return B.name + "wins!"
         }
-        else {
-            winCount += 1
-            console.log(winCount)
-            return A.name
-        }
+    else {
+        winCount += 1
+        console.log(winCount)
+        return A.name + "wins!"
+    }
     }
     
-    else return "Inconclusive"
     
-}
