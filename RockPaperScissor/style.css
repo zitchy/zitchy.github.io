@@ -12,7 +12,7 @@ body {
 
 #header {
     font-family: 'Anton', sans-serif;
-    font-size:40px;
+    font-size:35px;
     padding: 30px 20px;
     text-align: center;
     border-bottom: 4px solid #121212;
@@ -50,4 +50,34 @@ input {
 
 #name-el > * {
     padding: 5px 10px;
+}
+
+#arena {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    margin: 10px 0px;
+}
+
+#arena > * {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+#selectors {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    margin: 10px 0px;
+}
+
+#selectors > * {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
 }
