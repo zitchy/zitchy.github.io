@@ -20,7 +20,7 @@ resume: true
 resume-external: true
 resume-url: https://github.com/zitchy/zitchy.github.io/blob/gh-pages/assets/Umang%20Nagda.pdf
 
-url: https://zitchy.github.io/
+url: https://zitchy.github.io/whoami
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
