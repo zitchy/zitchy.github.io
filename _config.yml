@@ -1,6 +1,6 @@
 # main text of home
-title: John Doe
-bio: A Person who travels the world eating noodles
+title: Umang Nagda
+bio: An OffSec Professional enjoying my time on this planet.
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -8,7 +8,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: https://github.com/zitchy.png?size=500
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
@@ -18,9 +18,9 @@ dark-theme: auto
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-url: https://github.com/zitchy/zitchy.github.io/blob/gh-pages/assets/Umang%20Nagda.pdf
 
-url: https://sergiokopplin.github.io/indigo
+url: https://zitchy.github.io/
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -34,26 +34,20 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-instagram: myinstagram
-linkedin: mylinkedin
-github: mygithub
-email: myemail@gmail.com
+#facebook: myfacebook
+#twitter: mytwitter
+#instagram: myinstagram
+linkedin: https://linkedin.com/in/umang-nagda
+github: https://github.com/zitchy/
+email: umangrnagda@gmail.com
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
+  umangnagda:
+    name: Umang Nagda
+    bio: Someone who likes peace.
     external-image: false
-    picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+    picture: https://github.com/zitchy.png?size=300
+    twitter: freelanwho
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -61,7 +55,7 @@ authors:
 width: normal
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+#projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
